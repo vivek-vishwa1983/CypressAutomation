@@ -89,8 +89,30 @@ to different scenarios and browsers.
 
 **Project Structure:**
 
-![](media/image1.png){width="6.495833333333334in"
-height="4.991666666666666in"}
+CYPRESSAUTOMATION/
+|
+|-- cypress/
+|   |-- downloads/                                 # Cypress downloads (screenshots/videos if enabled)
+|	|-- fixtures/								   # Static test data (if needed)
+|	|-- Integration \ Login_Functionality/ 
+|	|	|-- Cart Add_Delete_Products.js			   # Add/remove items to/from cart
+|	|	|-- Continue_shopping_Functionality.js     # Verify 'Continue Shopping' flow
+|	|	|-- NegativeCases_Login.js				   # Invalid Login scenarios
+|	|	|-- PositiveCases_Login.js				   # Valid Login scenarios
+|	|	|-- PostLogout_Restriction.js			   # Block access to inventory after Logout
+|	|	|-- Product Navigation.js				   # Navigate through product pages
+|	|	|-- Sorting_Products.js                    # Sorting by name and price
+|	|	|-- UI_Validation.js                       # Field and UI checks
+|	|
+|	|-- support/	
+|	|   -- commands.js							   # Custom Cypress commands				
+|	|
+|	| -- e2e.js									   #Entry point for test execution
+|	|
+|	|-- cypress.config.js						   # Cypress configuration file
+|	|-- package.json							   # Project dependencies and scripts
+|	|-- package-lock.json						   # Auto-generated lockfile for consistency
+
 
 **My Goals with This Project:**
 
